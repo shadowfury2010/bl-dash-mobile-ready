@@ -1,10 +1,33 @@
 .main-container {
+    height: auto;
     margin:0;
     padding:0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-mid,
+.nav-bottom {
+    display: none;
+}
+
+.nav-top .main-logo-d {
+    display: none;
 }
 
 .central-dash {
     padding:15px;
+    overflow-y: hidden;
+    max-width: inherit;
+    height: auto;
+    margin-top: 6.5rem;
+}
+
+.right-dash {
+    overflow-y: hidden;
+    max-width: inherit;
+    height: auto;
 }
 
 .nav-bar .nav-mid-child {
@@ -12,7 +35,11 @@
 }
 
 .campaign-card-group .card-deck-test {
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.central-dash-top-btn {
+    justify-content: space-around;
 }
 
 .campaign-card-group .card-deck-test .campaign-card {
@@ -71,14 +98,6 @@
 .lead-table .table-desktop {
     display: none;
 }
-
-/* .lead-table .table-mobile .lead-no,
-.lead-table .table-mobile .lead-email,
-.lead-table .table-mobile .lead-date,
-.lead-table .table-mobile .lead-history,
-.lead-table .table-mobile .lead-delete {
-    display: none;
-} */
 
 .lead-table .table th,
 .lead-table .table td {
@@ -144,24 +163,6 @@
 
 .upgrade-plan img {
     margin: auto;
-}
-
-
-
-.nav-mid,
-.nav-bottom {
-    display: none;
-}
-
-.central-dash {
-    margin-top: 5.5rem;
-    height: auto;
-    overflow-y: hidden;
-}
-
-.right-dash {
-    height: auto;
-    overflow-y: hidden;
 }
 
 .nav-bar {
@@ -237,20 +238,22 @@
     display: none;
 }
 
-.nav-top .logo-name-t {
-    display: none;
-}
-
 .nav-top .main-logo-m img {
-    height: 3.5rem;
+    width: 10rem;
+    height: 4.5rem
 }
 
 .nav-top .open-nav-btn {
-    margin: auto;
+    margin: auto 2rem auto 10rem;
 }
 
 .nav-top .open-nav-btn i {
-    font-size: x-large;
+    font-size: 3.5rem;
+}
+
+.nav-top .logo-name-t img {
+    height: 4.5rem;
+    width: 20rem;
 }
 
 .nav-bar .nav-mid .nav-mid-child h5 {
@@ -434,8 +437,4 @@
 
 .sidenav .nav-mid-child h6 {
     color:#abb5e2;
-}
-
-.central-dash-top-btn {
-    justify-content: space-between;
 }

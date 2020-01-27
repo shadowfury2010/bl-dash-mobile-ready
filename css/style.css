@@ -45,15 +45,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation bar */
 
-@media screen and (min-width: 767px)
+@media screen and (min-width: 769px)
 {
     #mySidenav {display: none;}
     #nav-button {display: none;} 
 }
 
-@media screen and (min-width: 767px)
+@media screen and (min-width: 769px)
 {
     .main-logo-m {display: none;}
+    .nav-top .logo-name-t {
+        display: none;
+    }
 }
 
 .nav-top a {
